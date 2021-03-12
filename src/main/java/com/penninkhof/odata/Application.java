@@ -37,6 +37,7 @@ public class Application extends SpringBootServletInitializer {
 					repository.save(new Member(3, "Kim", "Bauer"));
 					repository.save(new Member(4, "David", "Palmer"));
 					repository.save(new Member(5, "Michelle", "Dessler"));
+					repository.save(new Member(6, "Test", "Odata"));
 				}
 	        }
 	    };
