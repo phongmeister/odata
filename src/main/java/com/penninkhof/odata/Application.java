@@ -6,7 +6,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
+//import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 import com.penninkhof.odata.entities.Member;
@@ -38,7 +39,6 @@ public class Application extends SpringBootServletInitializer {
 					repository.save(new Member(4, "David", "Palmer"));
 					repository.save(new Member(5, "Michelle", "Dessler"));
 					repository.save(new Member(6, "Test", "Odata"));
-					repository.save(new Member(7, "0000", "Zero"));
 				}
 			}
 		};
